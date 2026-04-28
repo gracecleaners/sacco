@@ -38,12 +38,10 @@
     <body>
         <!--header section -->
         <header>
-            <!-- Navbar (اختياري) -->
             <nav class="navbar main-nav fixed-top py-3 navbar-expand-lg">
                 <div
                     class="container d-flex justify-content-between align-items-center">
 
-                    <!-- Logo -->
                     <div class="d-flex align-items-center gap-2 brand-logo">
                         <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
                             class="logo-icon">
@@ -54,23 +52,21 @@
                         </div>
                     </div>
 
-                    <!-- Desktop Menu (visible on large screens only) -->
-                        <ul class="nav d-none d-lg-flex">
+                    <ul class="nav d-none d-lg-flex">
                         <li class="nav-item"><a class="nav-link"
-                            href="index.html">Home</a></li>
+                                href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link"
-                            href="Whyus.html">About</a></li>
+                                href="Whyus.html">About</a></li>
                         <li class="nav-item"><a class="nav-link"
-                            href="service.html">Services</a></li>
+                                href="service.html">Services</a></li>
                         <li class="nav-item"><a class="nav-link"
-                            href="team.html">Leadership</a></li>
-                        </ul>
+                                href="team.html">Leadership</a></li>
+                    </ul>
 
                     <a href="service.html"
                         class="btn px-4 d-none d-lg-block">Join
                         Now</a>
 
-                    <!-- Burger Button (Mobile Only) -->
                     <button class="navbar-toggler d-lg-none"
                         type="button"
                         data-bs-toggle="offcanvas"
@@ -82,73 +78,69 @@
                 </div>
             </nav>
 
-            <!-- Offcanvas Mobile Menu -->
-                        <h6 class="fw-bold">Subscribe to Member Updates</h6>
-                        <p class="text-muted small">
-                            Get financial tips, new product updates, and SACCO
-                            announcements straight to your inbox.
-                        </p>
-                        <form class="newsletter-box d-flex">
-                            <input type="email" class="form-control"
-                                placeholder="Enter your email">
-                            <button
-                                class="btn btn-primary ms-2 px-4">Subscribe</button>
-                        </form>
+            <div class="offcanvas offcanvas-end mobile-menu" id="mobileMenu">
+
+                <div class="offcanvas-header">
+                    <div class="d-flex align-items-center gap-2 brand-logo">
+                        <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
+                            class="logo-icon">
+                        <div class="brand-text">
+                            <h4 class="fw-bold m-0">Lira City Tara SACCO</h4>
+                            <small class="brand-tagline">For Growth and
+                                Prosperity</small>
+                        </div>
                     </div>
 
                     <button class="btn-close"
                         data-bs-dismiss="offcanvas"></button>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="Whyus.html">About</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="team.html">Leadership</a></li>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav gap-2">
+
+                        <li><a class="nav-link" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="Whyus.html">About</a></li>
                         <li><a class="nav-link"
-                            href="service.html">Services</a></li>
+                                href="service.html">Services</a></li>
                         <li><a class="nav-link"
-                        <h6 class="fw-bold mb-3">Member Resources</h6>
-                        <ul class="footer-links">
-                            <li><a href="#">Membership Requirements</a></li>
-                            <li><a href="#">Loan Application Guide</a></li>
-                            <li><a href="#">Savings Calculator</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Downloads</a></li>
-                            <li><a href="#">Member Portal</a></li>
-                        </ul>
+                                href="team.html">Leadership</a></li>
+
+                    </ul>
+
+                    <a class="btn w-100 mt-3" href="service.html">Join Now</a>
+
+                </div>
+
             </div>
         </header>
         <!-- Hero Section -->
         <section class="hero-modern">
-                            <li>
-                                <i class="bi bi-envelope"></i>
-                                taradevelopmentsaccotd@gmail.com
-                            </li>
-                            <li>
-                                <i class="bi bi-telephone"></i>
-                                0779653643 / 0772495805
-                            </li>
-                            <li>
-                                <i class="bi bi-geo-alt"></i>
-                                Ober Entebbe, Ober Parish, Lira City West<br>
-                                about 600 meters from Jinja Camp Market along
-                                Ogwang Patrick Road
-                            </li>
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6" data-aos="fade-right">
+                        <span class="hero-eyebrow">Member-owned •
+                            Community-first</span>
+
+                        <h1 class="hero-title">
+                            Savings and credit that grow livelihoods.
+                        </h1>
+
+                        <p class="hero-desc">
                             Lira City Tara Development SACCO provides reliable,
                             affordable, and innovative financial services that
                             strengthen member savings, unlock credit, and build
                             sustainable community growth.
                         </p>
 
-                        <img src="img/logo.jpg" class="logo-icon"
-                            alt="Lira City Tara SACCO logo">
-                        <strong> Lira City Tara SACCO</strong>
+                        <div class="d-flex gap-3 mt-3 flex-wrap">
+                            <a class="btn hero-btn-primary px-4"
                                 href="service.html">Explore Products</a>
                             <a class="btn hero-btn-outline px-4"
-                        Copyright © Lira City Tara Development SACCO. All
-                        rights reserved.
-                        <br>
-                        <p class="text-center">Built for member growth and
-                            prosperity.</p>
+                                href="Whyus.html">Why Choose Us</a>
+                        </div>
+
                         <div class="hero-rating mt-4">
                             <span class="rating-value">5,200+</span>
                             <span class="rating-text">Active members across
@@ -157,7 +149,6 @@
 
                     </div>
 
-                    <!-- RIGHT IMAGE -->
                     <div class="col-md-6 position-relative"
                         data-aos="fade-left">
                         <img src="img/banner.jpg"
