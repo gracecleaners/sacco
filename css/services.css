@@ -57,10 +57,27 @@ h5 {
 .navbar-toggler {
   border: none;
   color: #ffffff !important;
+  background: transparent;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .brand-logo {
+    max-width: 80%;
+  }
+  .brand-text h4 {
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .nav-link {
   color: #ffffff !important;
