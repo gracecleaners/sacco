@@ -1,4 +1,4 @@
-<!--Dental solutions page-->
+<!--Programs page-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,12 +26,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Sora:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
 
-        <link rel="shortcut icon" href="img/download (35).png"
+        <!--Aos -->
+        <link rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+        <link rel="shortcut icon" href="img/logo.jpg"
             type="image/x-icon">
-        <title>Prime Dental | Dental solutions </title>
+        <title>Lira City Tara SACCO | Programs</title>
     </head>
     <body>
         <!--header section -->
@@ -43,28 +47,29 @@
 
                     <!-- Logo -->
                     <div class="d-flex align-items-center gap-2 brand-logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <h4 class="fw-bold m-0 Logo">Prime Dental</h4>
+                        <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
+                            class="logo-icon">
+                        <div class="brand-text">
+                            <h4 class="fw-bold m-0 Logo">Lira City Tara SACCO</h4>
+                            <small class="brand-tagline">For Growth and
+                                Prosperity</small>
+                        </div>
                     </div>
 
                     <!-- Desktop Menu (visible on large screens only) -->
-                    <ul class="nav d-none d-lg-flex">
-                        <li class="nav-item"><a class="nav-link "
-                                href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="Whyus.html">Why Us</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="service.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="team.html">Team</a></li>
+                        <ul class="nav d-none d-lg-flex">
                         <li class="nav-item"><a class="nav-link"
-                                href="Pricing.html">Pricing</a></li>
+                            href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link"
-                                href="DentalSolutions.html">Solutions</a></li>
-                    </ul>
+                            href="Whyus.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                            href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                            href="team.html">Leadership</a></li>
+                        </ul>
 
-                    <a href="#"
-                        class="btn px-4 d-none d-lg-block">Book
+                    <a href="service.html"
+                        class="btn px-4 d-none d-lg-block">Join
                         Now</a>
 
                     <!-- Burger Button (Mobile Only) -->
@@ -80,12 +85,17 @@
             </nav>
 
             <!-- Offcanvas Mobile Menu -->
-            <div class="offcanvas offcanvas-end" id="mobileMenu">
+            <div class="offcanvas offcanvas-end mobile-menu" id="mobileMenu">
 
                 <div class="offcanvas-header">
                     <div class="d-flex align-items-center gap-2 brand-logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <h4 class="fw-bold m-0">Prime Dental</h4>
+                        <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
+                            class="logo-icon">
+                        <div class="brand-text">
+                            <h4 class="fw-bold m-0">Lira City Tara SACCO</h4>
+                            <small class="brand-tagline">For Growth and
+                                Prosperity</small>
+                        </div>
                     </div>
 
                     <button class="btn-close"
@@ -97,19 +107,15 @@
                     <ul class="navbar-nav gap-2">
 
                         <li><a class="nav-link" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="Whyus.html">Why
-                                Us</a></li>
+                        <li><a class="nav-link" href="Whyus.html">About</a></li>
                         <li><a class="nav-link"
-                                href="service.html">Services</a></li>
-                        <li><a class="nav-link" href="team.html">Team</a></li>
+                            href="service.html">Services</a></li>
                         <li><a class="nav-link"
-                                href="Pricing.html">Pricing</a></li>
-                        <li><a class="nav-link"
-                                href="DentalSolutions.html">Solutions</a></li>
+                            href="team.html">Leadership</a></li>
 
                     </ul>
 
-                    <a class="btn w-100 mt-3">Book Now</a>
+                    <a class="btn w-100 mt-3" href="service.html">Join Now</a>
 
                 </div>
 
@@ -117,143 +123,135 @@
         </header>
         <!-- Hero Section -->
         <section class="hero-section d-flex align-items-center">
-            <div class="container text-center">
+            <div class="container text-center" data-aos="fade-up">
 
                 <h1 class="hero-title">
-                    Dental Solutions & Treatment Care
+                    Member Programs & Partnerships
                 </h1>
 
                 <p class="hero-text">
-                    We provide comprehensive and reliable treatment solutions
-                    for a wide range of dental problems.
+                    Empowerment programs that expand financial inclusion,
+                    livelihoods, and community development.
                 </p>
 
-                <a href="#" class="btn hero-btn px-5 py-2">
-                    Book an Appointment
+                <a href="service.html" class="btn hero-btn px-5 py-2">
+                    Explore Programs
                 </a>
 
             </div>
         </section>
-        <!-- Dental Solutions Section -->
+        <!-- Programs Section -->
         <section class="container py-5">
 
-            <div class="text-center mb-4">
-                <h2 class="fw-bold">Dental Solutions</h2>
+            <div class="text-center mb-4" data-aos="fade-up">
+                <h2 class="fw-bold">Programs & Partnerships</h2>
                 <p class="text-muted">
-                    Effective treatment options for common dental problems.
+                    Initiatives that advance financial inclusion, skills
+                    development, and shared prosperity.
                 </p>
             </div>
 
             <div class="row g-4">
 
-                <!-- Solution Card -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="solution-card">
                         <div class="solution-icon">
-                            <i class="bi bi-emoji-frown"></i>
+                            <i class="bi bi-people"></i>
                         </div>
 
-                        <h5 class="fw-bold">Tooth Decay Treatment</h5>
+                        <h5 class="fw-bold">Youth & Women Empowerment</h5>
 
                         <p>
-                            Professional fillings and restoration procedures to
-                            treat cavities
-                            and protect tooth structure.
+                            Savings circles, mentorship, and access to startup
+                            capital for emerging entrepreneurs.
                         </p>
 
                         <a href="#" class="solution-link">Learn More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
                     <div class="solution-card">
                         <div class="solution-icon">
-                            <i class="bi bi-bandaid"></i>
+                            <i class="bi bi-briefcase"></i>
                         </div>
 
-                        <h5 class="fw-bold">Gum Disease Care</h5>
+                        <h5 class="fw-bold">SME Growth Support</h5>
 
                         <p>
-                            Deep cleaning and periodontal therapy to restore gum
-                            health
-                            and prevent complications.
+                            Business clinics, market linkages, and working
+                            capital to help member enterprises scale.
                         </p>
 
                         <a href="#" class="solution-link">Learn More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="solution-card">
                         <div class="solution-icon">
-                            <i class="bi bi-braces"></i>
+                            <i class="bi bi-tree"></i>
                         </div>
 
-                        <h5 class="fw-bold">Teeth Misalignment Fix</h5>
+                        <h5 class="fw-bold">Agriculture & Livelihoods</h5>
 
                         <p>
-                            Orthodontic braces and aligners designed to improve
-                            bite function
-                            and smile alignment.
-                        </p>
-
-                        <a href="#" class="solution-link">Learn More</a>
-                    </div>
-                </div>
-                <!-- Tooth Sensitivity -->
-                <div class="col-md-4">
-                    <div class="solution-card">
-
-                        <div class="solution-icon">
-                            <i class="bi bi-emoji-dizzy"></i>
-                        </div>
-
-                        <h5 class="fw-bold">Tooth Sensitivity Relief</h5>
-
-                        <p>
-                            Desensitizing treatments and enamel strengthening
-                            solutions to reduce
-                            pain while eating and drinking.
+                            Seasonal loans and asset financing for farmers and
+                            value chain actors.
                         </p>
 
                         <a href="#" class="solution-link">Learn More</a>
                     </div>
                 </div>
 
-                <!-- Cosmetic Smile Enhancement -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
                     <div class="solution-card">
 
                         <div class="solution-icon">
-                            <i class="bi bi-emoji-smile"></i>
+                            <i class="bi bi-phone"></i>
                         </div>
 
-                        <h5 class="fw-bold">Cosmetic Smile Enhancement</h5>
+                        <h5 class="fw-bold">Digital Finance Access</h5>
 
                         <p>
-                            Whitening, veneers, and cosmetic reshaping to
-                            improve smile appearance
-                            and boost confidence.
+                            Mobile updates, digital reporting, and remote
+                            support for members on the move.
                         </p>
 
                         <a href="#" class="solution-link">Learn More</a>
                     </div>
                 </div>
 
-                <!-- Dental Implants -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="solution-card">
 
                         <div class="solution-icon">
-                            <i class="bi bi-hospital"></i>
+                            <i class="bi bi-journal-text"></i>
                         </div>
 
-                        <h5 class="fw-bold">Dental Implants & Replacement</h5>
+                        <h5 class="fw-bold">Financial Literacy</h5>
 
                         <p>
-                            Permanent and durable implant solutions for missing
-                            teeth to restore
-                            function and natural smile aesthetics.
+                            Training on budgeting, saving, and investment for
+                            stronger household finances.
+                        </p>
+
+                        <a href="#" class="solution-link">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="solution-card">
+
+                        <div class="solution-icon">
+                            <i class="bi bi-globe2"></i>
+                        </div>
+
+                        <h5 class="fw-bold">Strategic Partnerships</h5>
+
+                        <p>
+                            Collaborations with institutions to unlock grants,
+                            training, and new opportunities.
                         </p>
 
                         <a href="#" class="solution-link">Learn More</a>
@@ -263,36 +261,34 @@
             </div>
 
         </section>
-        <!--appointment container-->
-        <section class="container my-5">
+        <!--programs CTA-->
+        <section class="container my-5" data-aos="fade-up">
 
             <div class="row align-items-stretch g-0 no-gap">
 
-                <!-- Text Column (With Background & Circles) -->
                 <div class="col-md-7">
                     <div class="appointment-box p-5">
 
                         <h3 class="fw-bold text-white">
-                            Not sure which treatment suits your case?
+                            Want to partner or join a program?
                         </h3>
 
                         <p class="text-white-50">
-                            Book a consultation and our doctors will guide you
-                            to the best solution.
+                            Reach out to our team to learn about ongoing
+                            initiatives and member opportunities.
                         </p>
 
                         <a class="btn btn-light px-4 fw-semibold">
-                            Book an Appointment
+                            Contact the SACCO
                         </a>
 
                     </div>
                 </div>
 
-                <!-- Image Column -->
                 <div class="col-md-5">
                     <img
-                        src="img/solutions1.jpg"
-                        class="equal-img">
+                        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+                        class="equal-img" alt="Community programs">
                 </div>
 
             </div>
@@ -307,10 +303,9 @@
 
                     <!-- Newsletter -->
                     <div class="col-lg-4">
-                        <h6 class="fw-bold">Subscribe to our Newsletter</h6>
+                        <h6 class="fw-bold">Subscribe to Member Updates</h6>
                         <p class="text-muted small">
-                            Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla.
+                            Get SACCO news, program updates, and financial tips.
                         </p>
 
                         <form class="newsletter-box d-flex">
@@ -327,26 +322,23 @@
 
                         <ul class="footer-links">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="Whyus.html">Why Us ?</a></li>
+                            <li><a href="Whyus.html">About</a></li>
                             <li><a href="service.html">Services</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="Pricing.html">Pricing</a></li>
-                            <li><a href="DentalSolutions.html">Dental
-                                    Solutions</a></li>
+                            <li><a href="team.html">Leadership</a></li>
                         </ul>
                     </div>
 
                     <!-- Utility Pages -->
                     <div class="col-lg-3">
-                        <h6 class="fw-bold mb-3">Utility Pages</h6>
+                        <h6 class="fw-bold mb-3">Member Resources</h6>
 
                         <ul class="footer-links">
-                            <li><a href="#">Styleguide</a></li>
-                            <li><a href="#">Password Protected</a></li>
-                            <li><a href="#">404 Not Found</a></li>
-                            <li><a href="#">Start Here</a></li>
-                            <li><a href="#">Licenses</a></li>
-                            <li><a href="#">Changelog</a></li>
+                            <li><a href="#">Membership Requirements</a></li>
+                            <li><a href="#">Loan Application Guide</a></li>
+                            <li><a href="#">Savings Calculator</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Downloads</a></li>
+                            <li><a href="#">Member Portal</a></li>
                         </ul>
                     </div>
 
@@ -358,18 +350,19 @@
 
                             <li>
                                 <i class="bi bi-envelope"></i>
-                                contact@dentist.com
+                                taradevelopmentsaccotd@gmail.com
                             </li>
 
                             <li>
                                 <i class="bi bi-telephone"></i>
-                                +970 598 536 488
+                                0779653643 / 0772495805
                             </li>
 
                             <li>
                                 <i class="bi bi-geo-alt"></i>
-                                Al-Remal — Khaled Bin Al-Waleed<br>
-                                Gaza, palestine
+                                Ober Entebbe, Ober Parish, Lira City West<br>
+                                about 600 meters from Jinja Camp Market along
+                                Ogwang Patrick Road
                             </li>
 
                         </ul>
@@ -384,15 +377,17 @@
                     class="d-flex justify-content-between align-items-center flex-wrap">
 
                     <div class="d-flex align-items-center gap-2 logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <strong> Prime Dental</strong>
+                        <img src="img/logo.jpg" class="logo-icon"
+                            alt="Lira City Tara SACCO logo">
+                        <strong> Lira City Tara SACCO</strong>
                     </div>
 
                     <small class="text-muted">
-                        Copyright © Prime Dental — Designed by BRIX Templates —
-                        Powered by Webflow
+                        Copyright © Lira City Tara Development SACCO. All
+                        rights reserved.
                         <br>
-                        <p class="text-center"> Developed by <a target="_blank" href="https://github.com/farahabuassi17">Farah Abuassi</a> • Distributed by <a target="_blank" href="https://themewagon.com">ThemeWagon</a></p>
+                        <p class="text-center">Built for member growth and
+                            prosperity.</p>
                     </small>
 
                     <div class="social-icons d-flex gap-2">
@@ -411,6 +406,8 @@
         <!-- Bootstrap JS && custom js-->
         <script
             src="js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

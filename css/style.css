@@ -1,24 +1,36 @@
 :root {
-  --primary: #4e4bff;
-  --blueMid: #8a7aff;
-  --light: #f5f6ff;
+  --primary: #6b2e86;
+  --primary-dark: #4a1f61;
+  --secondary: #e4c56a;
+  --accent: #1aa6c8;
+  --light: #f7f5fb;
+  --ink: #1f1b26;
 }
 body {
-  background: #f3f4fb;
-  font-family: "Poppins", Arial;
+  background: #f6f5f9;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  color: var(--ink);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", "Times New Roman", serif;
 }
 .btn {
-  background: var(--light);
-  color: var(--blueMid);
+  background: var(--secondary);
+  color: var(--primary-dark);
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 10px 20px;
-  font-weight: 500;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 .btn:hover {
-  color: var(--blueMid);
+  color: var(--primary-dark);
   transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(107, 46, 134, 0.2);
 }
 /*header*/
 .logo-icon {
@@ -28,12 +40,13 @@ body {
 }
 .main-nav {
   transition: 0.3s ease;
-  background: transparent;
+  background: rgba(74, 31, 97, 0.35);
+  backdrop-filter: blur(10px);
 }
 
 .main-nav.scrolled {
-  background: var(--blueMid);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(31, 27, 38, 0.1);
 }
 .logo-icon {
   width: 28px;
@@ -43,35 +56,63 @@ body {
 
 .navbar-toggler {
   border: none;
-  color: var(--light) !important;
+  color: #ffffff !important;
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
 }
 .nav-link {
-  color: var(--light) !important;
-  font-weight: 500;
+  color: #ffffff !important;
+  font-weight: 600;
 }
 .brand-logo i {
-  color: var(--light) !important;
+  color: #ffffff !important;
 }
 .brand-logo h4 {
-  color: var(--light) !important;
+  color: #ffffff !important;
+}
+.brand-tagline {
+  display: block;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.3px;
+}
+.main-nav.scrolled .nav-link,
+.main-nav.scrolled .brand-logo h4,
+.main-nav.scrolled .brand-tagline {
+  color: var(--primary) !important;
+}
+.main-nav.scrolled .navbar-toggler {
+  color: var(--primary) !important;
+}
+.mobile-menu {
+  background: var(--primary-dark);
+  color: #ffffff;
+}
+.mobile-menu .nav-link {
+  color: #ffffff !important;
 }
 
 .hero-modern {
   padding: 120px 0 90px;
   background: linear-gradient(
     180deg,
-    #4b3df2 0%,
-    #8a7aff 20%,
-    #bfc4ff 45%,
-    #eef0ff 70%,
-    #ffffff 100%
+    #3b1a4d 0%,
+    #6b2e86 35%,
+    #9c77b1 60%,
+    #f7f5fb 100%
   );
   border-radius: 0 0 35px 35px;
   color: #fff;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 12px;
 }
 
 /* TEXT */
@@ -90,30 +131,51 @@ body {
 
 /* BUTTONS */
 .hero-btn-primary {
-  background: #fff;
-  color: var(--primary);
+  background: var(--secondary);
+  color: var(--primary-dark);
   border-radius: 12px;
   font-weight: 600;
 }
 
 .hero-btn-outline {
-  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0.9);
   color: #fff;
   border-radius: 12px;
   font-weight: 600;
 }
+.hero-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
 /* IMAGE */
 .hero-img {
-  padding: 10px 18px;
-  position: relative;
-  width: 300px;
-  left: 80px;
-  z-index: 2;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(31, 27, 38, 0.25);
+}
+.hero-banner {
+  animation: float 7s ease-in-out infinite;
+}
+.hero-card {
+  position: absolute;
+  bottom: -18px;
+  left: 20px;
+  background: #ffffff;
+  color: var(--primary-dark);
+  padding: 14px 18px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(31, 27, 38, 0.18);
+  max-width: 260px;
+}
+.hero-card-title {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
 }
 
 /* RATING BOX */
 .hero-rating {
-  background: var(--blueMid);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   padding: 10px 18px;
   width: max-content;
@@ -129,9 +191,18 @@ body {
   opacity: 0.9;
   margin-left: 6px;
 }
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 /* Appointment Bar */
 .appointment-bar {
-  background: var(--light);
+  background: #ffffff;
   border-radius: 15px;
   padding: 18px 20px;
   margin-top: -50px; /* يطلع فوق الهيرو */
@@ -147,7 +218,7 @@ body {
 
 /* زر الحجز */
 .make-btn {
-  background: var(--blueMid);
+  background: var(--primary);
   color: #fff;
   font-weight: 600;
   border-radius: 25px;
@@ -155,8 +226,8 @@ body {
 }
 
 .make-btn:hover {
-  opacity: 0.9;
-  color: var(--blueMid);
+  opacity: 0.92;
+  color: #fff;
   transform: translateY(-2px);
 }
 /* Features Section */
@@ -166,7 +237,7 @@ body {
 
 .feature-icon {
   font-size: 42px;
-  color: var(--blueMid);
+  color: var(--accent);
   margin-bottom: 6px;
 }
 
@@ -179,7 +250,7 @@ body {
 }
 /* Stats Section */
 .stats-box {
-  background: linear-gradient(135deg, #6b63ff, #a69eff);
+  background: linear-gradient(135deg, #6b2e86, #3b1a4d);
   padding: 28px 35px;
   border-radius: 18px;
   color: #fff;
@@ -195,11 +266,11 @@ body {
 .counter {
   font-size: 32px;
   font-weight: 800;
-  color: beige;
+  color: #ffffff;
 }
 
 .stats-label {
-  color: beige;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
 }
 
@@ -224,7 +295,7 @@ body {
 
 /* عنوان صغير */
 .tag {
-  color: var(--blueMid);
+  color: var(--secondary);
   font-weight: 600;
   letter-spacing: 0.5px;
 }
@@ -232,7 +303,7 @@ body {
 /* رمز الاقتباس */
 .quote-icon {
   font-size: 32px;
-  color: var(--blueMid);
+  color: var(--primary);
   margin: 10px 0;
 }
 
@@ -279,13 +350,13 @@ body {
 }
 
 .blog-tag {
-  color: var(--blueMid);
+  color: var(--primary);
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 .read-link {
-  color: var(--blueMid);
+  color: var(--primary);
   font-weight: 600;
   text-decoration: none;
 }
@@ -293,8 +364,55 @@ body {
 .read-link:hover {
   text-decoration: underline;
 }
+.info-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 18px 35px rgba(31, 27, 38, 0.08);
+  border: 1px solid rgba(107, 46, 134, 0.08);
+}
+.info-title {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.values-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(228, 197, 106, 0.18);
+  color: var(--ink);
+  font-weight: 600;
+}
+.values-list i {
+  color: var(--primary);
+}
+.section-eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.objective-item {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  border: 1px solid rgba(107, 46, 134, 0.1);
+  box-shadow: 0 12px 25px rgba(31, 27, 38, 0.06);
+  font-weight: 600;
+}
 .faq-tag {
-  color: var(--blueMid);
+  color: var(--accent);
   font-weight: 600;
   letter-spacing: 0.5px;
 }
@@ -305,7 +423,7 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #4b3df2;
+  color: var(--primary);
   background: #e8ecff;
 }
 
@@ -317,7 +435,7 @@ body {
 }
 
 .cta-box {
-  background: linear-gradient(135deg, #6b63ff, #a69eff);
+  background: linear-gradient(135deg, #6b2e86, #3b1a4d);
   padding: 28px 35px;
   border-radius: 18px;
   color: #fff;
@@ -330,7 +448,7 @@ body {
 /* زر الحجز */
 .cta-btn {
   background: #ffffff;
-  color: #4b3df2;
+  color: var(--primary);
   font-weight: 700;
   padding: 10px 26px;
   border-radius: 25px;
@@ -338,8 +456,8 @@ body {
 }
 
 .cta-btn:hover {
-  background: var(--blueMid);
-  color: var(--light);
+  background: var(--secondary);
+  color: var(--primary-dark);
   transform: translateY(-2px);
 }
 @media (max-width: 768px) {
@@ -370,7 +488,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: #4e4bff;
+  color: var(--primary);
 }
 
 .footer-contact {
@@ -385,7 +503,7 @@ body {
 }
 
 .footer-contact i {
-  color: #4e4bff;
+  color: var(--primary);
   margin-right: 6px;
 }
 
@@ -395,8 +513,8 @@ body {
 
 .newsletter-box button {
   border-radius: 8px;
-  background: linear-gradient(135deg, #6b63ff, #4b3df2);
-  color: var(--light);
+  background: var(--primary);
+  color: #ffffff;
 }
 
 .social-icons i {

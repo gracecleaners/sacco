@@ -1,19 +1,30 @@
 :root {
-  --primary: #4e4bff;
-  --blueMid: #8a7aff;
-  --light: #f5f6ff;
+  --primary: #6b2e86;
+  --primary-dark: #4a1f61;
+  --secondary: #e4c56a;
+  --accent: #1aa6c8;
+  --light: #f7f5fb;
+  --ink: #1f1b26;
 }
 body {
-  background: #f3f4fb;
-  font-family: "Poppins", Arial;
+  background: #f6f5f9;
+  font-family: "Sora", "Segoe UI", sans-serif;
+  color: var(--ink);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", "Times New Roman", serif;
 }
 .btn {
-  background: linear-gradient(135deg, #6b63ff, #4b3df2);
-  color: #fff;
+  background: var(--secondary);
+  color: var(--primary-dark);
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -25,7 +36,8 @@ body {
 }
 .main-nav {
   transition: 0.3s ease;
-  background: transparent;
+  background: rgba(74, 31, 97, 0.35);
+  backdrop-filter: blur(10px);
 }
 
 .main-nav.scrolled {
@@ -40,21 +52,42 @@ body {
 
 .navbar-toggler {
   border: none;
-  color: var(--blueMid) !important;
+  color: #ffffff !important;
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
 }
 .nav-link {
-  color: var(--blueMid) !important;
-  font-weight: 500;
+  color: #ffffff !important;
+  font-weight: 600;
 }
 .brand-logo i {
-  color: var(--blueMid) !important;
+  color: #ffffff !important;
 }
 .brand-logo h4 {
-  color: var(--blueMid) !important;
+  color: #ffffff !important;
+}
+.brand-tagline {
+  display: block;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.3px;
+}
+.main-nav.scrolled .nav-link,
+.main-nav.scrolled .brand-logo h4,
+.main-nav.scrolled .brand-tagline {
+  color: var(--primary) !important;
+}
+.main-nav.scrolled .navbar-toggler {
+  color: var(--primary) !important;
+}
+.mobile-menu {
+  background: var(--primary-dark);
+  color: #ffffff;
+}
+.mobile-menu .nav-link {
+  color: #ffffff !important;
 }
 /*hero section*/
 .hero-section {
@@ -65,11 +98,10 @@ body {
 
   background: linear-gradient(
     180deg,
-    #ffffff 0%,
-    #eef0ff 20%,
-    #bfc4ff 45%,
-    #8a7aff 70%,
-    #4b3df2 100%
+    #3b1a4d 0%,
+    #6b2e86 35%,
+    #9c77b1 60%,
+    #f7f5fb 100%
   );
 
   display: flex;
@@ -93,8 +125,8 @@ body {
 
 /* Button */
 .hero-btn {
-  background: #fff;
-  color: #4b3df2;
+  background: var(--secondary);
+  color: var(--primary-dark);
   font-weight: 600;
   border-radius: 10px;
   transition: 0.3s;
@@ -128,13 +160,13 @@ body {
 
 .team-link {
   text-decoration: none;
-  color: #4b3df2;
+  color: var(--primary);
   font-weight: 600;
 }
 .appointment-box {
   position: relative;
   border-radius: 22px 0 0 22px;
-  background: linear-gradient(135deg, #6b63ff, #4b3df2);
+  background: linear-gradient(135deg, #6b2e86, #3b1a4d);
   overflow: hidden;
 }
 
@@ -181,7 +213,7 @@ body {
 
 .why-team-box i {
   font-size: 30px;
-  color: #4b3df2;
+  color: var(--accent);
 }
 
 /* Footer Styles */
@@ -205,7 +237,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: #4e4bff;
+  color: var(--primary);
 }
 
 .footer-contact {
@@ -220,7 +252,7 @@ body {
 }
 
 .footer-contact i {
-  color: #4e4bff;
+  color: var(--primary);
   margin-right: 6px;
 }
 
@@ -230,17 +262,19 @@ body {
 
 .newsletter-box button {
   border-radius: 8px;
+  background: var(--primary);
+  color: #ffffff;
 }
 
 .social-icons i {
   font-size: 18px;
   cursor: pointer;
-  color: var(--blueMid);
+  color: var(--primary);
 }
 
 .social-icons i:hover {
-  color: #4e4bff;
+  color: var(--primary-dark);
 }
 .logo {
-  color: var(--blueMid) !important;
+  color: var(--primary) !important;
 }

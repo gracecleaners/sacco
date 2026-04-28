@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Prime Dental |Our Services</title>
+        <title>Lira City Tara SACCO | Services</title>
 
         <!-- Bootstrap -->
         <link
@@ -27,10 +27,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Sora:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
 
-        <link rel="shortcut icon" href="img/download (35).png"
+        <!--Aos -->
+        <link rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+        <link rel="shortcut icon" href="img/logo.jpg"
             type="image/x-icon">
     </head>
 
@@ -44,28 +48,29 @@
 
                     <!-- Logo -->
                     <div class="d-flex align-items-center gap-2 brand-logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <h4 class="fw-bold m-0 Logo">Prime Dental</h4>
+                        <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
+                            class="logo-icon">
+                        <div class="brand-text">
+                            <h4 class="fw-bold m-0 Logo">Lira City Tara SACCO</h4>
+                            <small class="brand-tagline">For Growth and
+                                Prosperity</small>
+                        </div>
                     </div>
 
                     <!-- Desktop Menu (visible on large screens only) -->
-                    <ul class="nav d-none d-lg-flex">
-                        <li class="nav-item"><a class="nav-link "
-                                href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="Whyus.html">Why Us</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="service.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="team.html">Team</a></li>
+                        <ul class="nav d-none d-lg-flex">
                         <li class="nav-item"><a class="nav-link"
-                                href="Pricing.html">Pricing</a></li>
+                            href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link"
-                                href="DentalSolutions.html">Solutions</a></li>
-                    </ul>
+                            href="Whyus.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                            href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                            href="team.html">Leadership</a></li>
+                        </ul>
 
-                    <a href="#"
-                        class="btn px-4 d-none d-lg-block">Book
+                    <a href="service.html"
+                        class="btn px-4 d-none d-lg-block">Join
                         Now</a>
 
                     <!-- Burger Button (Mobile Only) -->
@@ -81,12 +86,17 @@
             </nav>
 
             <!-- Offcanvas Mobile Menu -->
-            <div class="offcanvas offcanvas-end" id="mobileMenu">
+            <div class="offcanvas offcanvas-end mobile-menu" id="mobileMenu">
 
                 <div class="offcanvas-header">
                     <div class="d-flex align-items-center gap-2 brand-logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <h4 class="fw-bold m-0">Prime Dental</h4>
+                        <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
+                            class="logo-icon">
+                        <div class="brand-text">
+                            <h4 class="fw-bold m-0">Lira City Tara SACCO</h4>
+                            <small class="brand-tagline">For Growth and
+                                Prosperity</small>
+                        </div>
                     </div>
 
                     <button class="btn-close"
@@ -98,19 +108,15 @@
                     <ul class="navbar-nav gap-2">
 
                         <li><a class="nav-link" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="Whyus.html">Why
-                                Us</a></li>
+                        <li><a class="nav-link" href="Whyus.html">About</a></li>
                         <li><a class="nav-link"
-                                href="service.html">Services</a></li>
-                        <li><a class="nav-link" href="team.html">Team</a></li>
+                            href="service.html">Services</a></li>
                         <li><a class="nav-link"
-                                href="Pricing.html">Pricing</a></li>
-                        <li><a class="nav-link"
-                                href="DentalSolutions.html">Solutions</a></li>
+                            href="team.html">Leadership</a></li>
 
                     </ul>
 
-                    <a class="btn w-100 mt-3">Book Now</a>
+                    <a class="btn w-100 mt-3" href="service.html">Join Now</a>
 
                 </div>
 
@@ -119,19 +125,19 @@
         <!--hero section-->
         <section class="hero-section">
 
-            <div class="container text-center">
+            <div class="container text-center" data-aos="fade-up">
 
                 <h1 class="hero-title">
-                    Professional & Modern Dental Care
+                    Financial Products and Member Services
                 </h1>
 
                 <p class="hero-text">
-                    We provide advanced and high-quality dental solutions
-                    to keep your smile healthy and bright.
+                    Savings, credit, advisory, and empowerment programs
+                    designed to build wealth and strengthen livelihoods.
                 </p>
 
                 <a href="#" class="btn hero-btn px-5 py-2">
-                    Book an Appointment
+                    Talk to a Loan Officer
                 </a>
 
             </div>
@@ -140,70 +146,75 @@
 
         <!-- Our Services Section -->
         <section class="container py-5">
-            <div class="text-center mb-4">
+            <div class="text-center mb-4" data-aos="fade-up">
                 <h2 class="fw-bold">Our Services</h2>
-                <p class="text-muted">We provide advanced and professional
-                    dental care services.</p>
+                <p class="text-muted">Financial solutions tailored for members,
+                    groups, and SMEs.</p>
             </div>
 
             <div class="row g-4">
 
-                <!-- Service Card -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="service-card">
-                        <i class="bi bi-brightness-high"></i>
-                        <h5>Cosmetic Dentistry</h5>
-                        <p>Teeth whitening, veneers, smile design & more.</p>
+                        <i class="bi bi-piggy-bank"></i>
+                        <h5>Regular Savings</h5>
+                        <p>Flexible savings accounts that build your capital
+                            base and access to credit.</p>
                         <a href="#" class="link-primary fw-semibold">Learn
                             More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
                     <div class="service-card">
-                        <i class="bi bi-braces"></i>
-                        <h5>Orthodontics</h5>
-                        <p>Braces & aligners for perfect teeth alignment.</p>
+                        <i class="bi bi-cash-coin"></i>
+                        <h5>Member Loans</h5>
+                        <p>Affordable loans for business growth, emergency
+                            needs, and personal development.</p>
                         <a href="#" class="link-primary fw-semibold">Learn
                             More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="service-card">
-                        <i class="bi bi-brush"></i>
-                        <h5>Oral Hygiene</h5>
-                        <p>Deep cleaning & gum health treatments.</p>
+                        <i class="bi bi-mortarboard"></i>
+                        <h5>Education & School Fees</h5>
+                        <p>Support children and youth with timely school fees
+                            financing.</p>
                         <a href="#" class="link-primary fw-semibold">Learn
                             More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
                     <div class="service-card">
-                        <i class="bi bi-emoji-smile"></i>
-                        <h5>Dental Treatment</h5>
-                        <p>Fillings, restorations & cavity care.</p>
+                        <i class="bi bi-briefcase"></i>
+                        <h5>SME & Business Financing</h5>
+                        <p>Working capital and equipment financing to scale your
+                            enterprise.</p>
                         <a href="#" class="link-primary fw-semibold">Learn
                             More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="service-card">
-                        <i class="bi bi-hospital"></i>
-                        <h5>Dental Surgery</h5>
-                        <p>Professional oral & gum surgeries.</p>
+                        <i class="bi bi-tree"></i>
+                        <h5>Agriculture & Asset Finance</h5>
+                        <p>Support for farming inputs, livestock, and productive
+                            assets.</p>
                         <a href="#" class="link-primary fw-semibold">Learn
                             More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="350">
                     <div class="service-card">
-                        <i class="bi bi-capsule"></i>
-                        <h5>Dental Implants</h5>
-                        <p>Permanent implant tooth replacement.</p>
+                        <i class="bi bi-people"></i>
+                        <h5>Financial Literacy</h5>
+                        <p>Training and advisory programs that strengthen
+                            budgeting and investment skills.</p>
                         <a href="#" class="link-primary fw-semibold">Learn
                             More</a>
                     </div>
@@ -212,34 +223,34 @@
             </div>
         </section>
 
-        <!-- Appointment Section -->
-        <section class="container my-5">
+        <!-- Membership Section -->
+        <section class="container my-5" data-aos="fade-up">
 
             <div class="row align-items-stretch g-0 no-gap">
 
-                <!-- Text Column (With Background & Circles) -->
                 <div class="col-md-7">
                     <div class="appointment-box p-5">
 
                         <h3 class="fw-bold text-white">
-                            Schedule a virtual or presential appointment today
+                            Ready to grow with us?
                         </h3>
 
                         <p class="text-white-50">
-                            Virtual & in-clinic consultations available
+                            Join the SACCO and access savings, credit, and
+                            advisory services that support your goals.
                         </p>
 
                         <a class="btn btn-light px-4 fw-semibold">
-                            Book an Appointment
+                            Become a Member
                         </a>
 
                     </div>
                 </div>
 
-                <!-- Image Column -->
                 <div class="col-md-5">
-                    <img src="img/service.jpeg"
-                        class="equal-img">
+                    <img
+                        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+                        class="equal-img" alt="Member services">
                 </div>
 
             </div>
@@ -254,10 +265,10 @@
 
                     <!-- Newsletter -->
                     <div class="col-lg-4">
-                        <h6 class="fw-bold">Subscribe to our Newsletter</h6>
+                        <h6 class="fw-bold">Subscribe to Member Updates</h6>
                         <p class="text-muted small">
-                            Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla.
+                            Get SACCO news, product updates, and financial tips
+                            every month.
                         </p>
 
                         <form class="newsletter-box d-flex">
@@ -274,26 +285,23 @@
 
                         <ul class="footer-links">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="Whyus.html">Why Us ?</a></li>
+                            <li><a href="Whyus.html">About</a></li>
                             <li><a href="service.html">Services</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="Pricing.html">Pricing</a></li>
-                            <li><a href="DentalSolutions.html">Dental
-                                    Solutions</a></li>
+                            <li><a href="team.html">Leadership</a></li>
                         </ul>
                     </div>
 
                     <!-- Utility Pages -->
                     <div class="col-lg-3">
-                        <h6 class="fw-bold mb-3">Utility Pages</h6>
+                        <h6 class="fw-bold mb-3">Member Resources</h6>
 
                         <ul class="footer-links">
-                            <li><a href="#">Styleguide</a></li>
-                            <li><a href="#">Password Protected</a></li>
-                            <li><a href="#">404 Not Found</a></li>
-                            <li><a href="#">Start Here</a></li>
-                            <li><a href="#">Licenses</a></li>
-                            <li><a href="#">Changelog</a></li>
+                            <li><a href="#">Membership Requirements</a></li>
+                            <li><a href="#">Loan Application Guide</a></li>
+                            <li><a href="#">Savings Calculator</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Downloads</a></li>
+                            <li><a href="#">Member Portal</a></li>
                         </ul>
                     </div>
 
@@ -305,18 +313,19 @@
 
                             <li>
                                 <i class="bi bi-envelope"></i>
-                                contact@dentist.com
+                                taradevelopmentsaccotd@gmail.com
                             </li>
 
                             <li>
                                 <i class="bi bi-telephone"></i>
-                                +970 598 536 488
+                                0779653643 / 0772495805
                             </li>
 
                             <li>
                                 <i class="bi bi-geo-alt"></i>
-                                Al-Remal — Khaled Bin Al-Waleed<br>
-                                Gaza, palestine
+                                Ober Entebbe, Ober Parish, Lira City West<br>
+                                about 600 meters from Jinja Camp Market along
+                                Ogwang Patrick Road
                             </li>
 
                         </ul>
@@ -331,15 +340,17 @@
                     class="d-flex justify-content-between align-items-center flex-wrap">
 
                     <div class="d-flex align-items-center gap-2 logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <strong> Prime Dental</strong>
+                        <img src="img/logo.jpg" class="logo-icon"
+                            alt="Lira City Tara SACCO logo">
+                        <strong> Lira City Tara SACCO</strong>
                     </div>
 
                     <small class="text-muted">
-                        Copyright © Prime Dental — Designed by BRIX Templates —
-                        Powered by Webflow
+                        Copyright © Lira City Tara Development SACCO. All
+                        rights reserved.
                         <br>
-                        <p class="text-center"> Developed by <a target="_blank" href="https://github.com/farahabuassi17">Farah Abuassi</a> • Distributed by <a target="_blank" href="https://themewagon.com">ThemeWagon</a></p>
+                        <p class="text-center">Built for member growth and
+                            prosperity.</p>
                     </small>
                     
                     <div class="social-icons d-flex gap-2">
@@ -359,6 +370,8 @@
         <!-- Bootstrap JS && custom js-->
         <script
             src="js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

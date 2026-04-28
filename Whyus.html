@@ -26,12 +26,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Sora:wght@300;400;500;600;700&display=swap"
             rel="stylesheet" />
 
-        <link rel="shortcut icon" href="img/download (35).png"
+        <!--Aos -->
+        <link rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+        <link rel="shortcut icon" href="img/logo.jpg"
             type="image/x-icon">
-        <title>Prime Dental | Why Us? </title>
+        <title>Lira City Tara SACCO | About Us</title>
     </head>
     <body>
         <!--header section -->
@@ -43,28 +47,29 @@
 
                     <!-- Logo -->
                     <div class="d-flex align-items-center gap-2 brand-logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <h4 class="fw-bold m-0 Logo">Prime Dental</h4>
+                        <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
+                            class="logo-icon">
+                        <div class="brand-text">
+                            <h4 class="fw-bold m-0 Logo">Lira City Tara SACCO</h4>
+                            <small class="brand-tagline">For Growth and
+                                Prosperity</small>
+                        </div>
                     </div>
 
                     <!-- Desktop Menu (visible on large screens only) -->
-                    <ul class="nav d-none d-lg-flex">
-                        <li class="nav-item"><a class="nav-link "
-                                href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="Whyus.html">Why Us</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="service.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link "
-                                href="team.html">Team</a></li>
+                        <ul class="nav d-none d-lg-flex">
                         <li class="nav-item"><a class="nav-link"
-                                href="Pricing.html">Pricing</a></li>
+                            href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link"
-                                href="DentalSolutions.html">Solutions</a></li>
-                    </ul>
+                            href="Whyus.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                            href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                            href="team.html">Leadership</a></li>
+                        </ul>
 
-                    <a href="#"
-                        class="btn px-4 d-none d-lg-block">Book
+                    <a href="service.html"
+                        class="btn px-4 d-none d-lg-block">Join
                         Now</a>
 
                     <!-- Burger Button (Mobile Only) -->
@@ -80,12 +85,17 @@
             </nav>
 
             <!-- Offcanvas Mobile Menu -->
-            <div class="offcanvas offcanvas-end" id="mobileMenu">
+            <div class="offcanvas offcanvas-end mobile-menu" id="mobileMenu">
 
                 <div class="offcanvas-header">
                     <div class="d-flex align-items-center gap-2 brand-logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <h4 class="fw-bold m-0">Prime Dental</h4>
+                        <img src="img/logo.jpg" alt="Lira City Tara SACCO logo"
+                            class="logo-icon">
+                        <div class="brand-text">
+                            <h4 class="fw-bold m-0">Lira City Tara SACCO</h4>
+                            <small class="brand-tagline">For Growth and
+                                Prosperity</small>
+                        </div>
                     </div>
 
                     <button class="btn-close"
@@ -97,19 +107,15 @@
                     <ul class="navbar-nav gap-2">
 
                         <li><a class="nav-link" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="Whyus.html">Why
-                                Us</a></li>
+                        <li><a class="nav-link" href="Whyus.html">About</a></li>
                         <li><a class="nav-link"
-                                href="service.html">Services</a></li>
-                        <li><a class="nav-link" href="team.html">Team</a></li>
+                            href="service.html">Services</a></li>
                         <li><a class="nav-link"
-                                href="Pricing.html">Pricing</a></li>
-                        <li><a class="nav-link"
-                                href="DentalSolutions.html">Solutions</a></li>
+                            href="team.html">Leadership</a></li>
 
                     </ul>
 
-                    <a class="btn w-100 mt-3">Book Now</a>
+                    <a class="btn w-100 mt-3" href="service.html">Join Now</a>
 
                 </div>
 
@@ -117,20 +123,20 @@
         </header>
         <!-- hero section-->
         <section class="hero-section d-flex align-items-center">
-            <div class="container text-center">
+            <div class="container text-center" data-aos="fade-up">
 
                 <h1 class="hero-title">
-                    Why Choose Prime Dental?
+                    About Lira City Tara Development SACCO
                 </h1>
 
                 <p class="hero-text">
-                    We provide trusted, compassionate and high-quality dental
-                    care
-                    to ensure your comfort and confidence.
+                    A member-driven financial cooperative delivering inclusive
+                    services that build savings, unlock credit, and strengthen
+                    community livelihoods.
                 </p>
 
-                <a href="#" class="btn hero-btn px-5 py-2">
-                    Book an Appointment
+                <a href="service.html" class="btn hero-btn px-5 py-2">
+                    Explore Member Services
                 </a>
 
             </div>
@@ -140,50 +146,44 @@
 
             <div class="row align-items-center g-4">
 
-                <!-- Image Column -->
-                <div class="col-md-5">
-                    <img src="img/whyus.jpg"
-                        class="why-img">
+                <div class="col-md-5" data-aos="fade-right">
+                    <img
+                        src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
+                        class="why-img" alt="SACCO community">
                 </div>
 
-                <!-- Text Column -->
-                <div class="col-md-7">
+                <div class="col-md-7" data-aos="fade-left">
 
-                    <h2 class="fw-bold mb-2">Why Choose Prime Dental?</h2>
+                    <h2 class="fw-bold mb-2">Why Choose Our SACCO?</h2>
 
                     <p class="text-muted mb-3">
-                        At Prime Dental, we focus on delivering accurate,
-                        comfortable, and
-                        high-quality dental care using modern technology and
-                        experienced medical
-                        standards. Our team works with care and transparency to
-                        provide personalized
-                        treatment plans and a friendly clinical environment
-                        where patients feel safe,
-                        confident, and supported throughout their dental
-                        journey.
+                        We are a member-driven SACCO committed to integrity,
+                        accountability, and inclusive financial services. We
+                        focus on building savings culture, expanding affordable
+                        credit, and empowering members with the skills to grow
+                        their livelihoods.
                     </p>
 
                     <ul class="why-list">
 
                         <li>
                             <i class="bi bi-check-circle-fill"></i>
-                            Certified & highly-qualified dentists
+                            Transparent governance and member ownership
                         </li>
 
                         <li>
                             <i class="bi bi-check-circle-fill"></i>
-                            Modern technology & advanced dental equipment
+                            Affordable credit with supportive repayment plans
                         </li>
 
                         <li>
                             <i class="bi bi-check-circle-fill"></i>
-                            Friendly & patient-centered treatment experience
+                            Financial literacy and skills development programs
                         </li>
 
                         <li>
                             <i class="bi bi-check-circle-fill"></i>
-                            Affordable treatment plans & flexible appointments
+                            Digital services for easy access and updates
                         </li>
 
                     </ul>
@@ -194,35 +194,33 @@
 
         </section>
         <!--appointment container-->
-        <section class="container my-5">
+        <section class="container my-5" data-aos="fade-up">
 
             <div class="row align-items-stretch g-0 no-gap">
 
-                <!-- Text Column (With Background & Circles) -->
                 <div class="col-md-7">
                     <div class="appointment-box p-5">
 
                         <h3 class="fw-bold text-white">
-                            Your Smile is Our Priority
+                            Strengthen your financial future
                         </h3>
 
                         <p class="text-white-50">
-                            Book your visit and let our team take care of your
-                            dental health.
+                            Become a member and access savings, loans, and
+                            advisory services made for your goals.
                         </p>
 
                         <a class="btn btn-light px-4 fw-semibold">
-                            Book an Appointment
+                            Join the SACCO
                         </a>
 
                     </div>
                 </div>
 
-                <!-- Image Column -->
                 <div class="col-md-5">
                     <img
-                        src="img/whyusapp.jpeg"
-                        class="equal-img">
+                        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80"
+                        class="equal-img" alt="Member support">
                 </div>
 
             </div>
@@ -238,10 +236,9 @@
 
                     <!-- Newsletter -->
                     <div class="col-lg-4">
-                        <h6 class="fw-bold">Subscribe to our Newsletter</h6>
+                        <h6 class="fw-bold">Subscribe to Member Updates</h6>
                         <p class="text-muted small">
-                            Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla.
+                            Receive SACCO announcements and financial tips.
                         </p>
 
                         <form class="newsletter-box d-flex">
@@ -258,26 +255,23 @@
 
                         <ul class="footer-links">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="Whyus.html">Why Us ?</a></li>
+                            <li><a href="Whyus.html">About</a></li>
                             <li><a href="service.html">Services</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="Pricing.html">Pricing</a></li>
-                            <li><a href="DentalSolutions.html">Dental
-                                    Solutions</a></li>
+                            <li><a href="team.html">Leadership</a></li>
                         </ul>
                     </div>
 
                     <!-- Utility Pages -->
                     <div class="col-lg-3">
-                        <h6 class="fw-bold mb-3">Utility Pages</h6>
+                        <h6 class="fw-bold mb-3">Member Resources</h6>
 
                         <ul class="footer-links">
-                            <li><a href="#">Styleguide</a></li>
-                            <li><a href="#">Password Protected</a></li>
-                            <li><a href="#">404 Not Found</a></li>
-                            <li><a href="#">Start Here</a></li>
-                            <li><a href="#">Licenses</a></li>
-                            <li><a href="#">Changelog</a></li>
+                            <li><a href="#">Membership Requirements</a></li>
+                            <li><a href="#">Loan Application Guide</a></li>
+                            <li><a href="#">Savings Calculator</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Downloads</a></li>
+                            <li><a href="#">Member Portal</a></li>
                         </ul>
                     </div>
 
@@ -289,18 +283,19 @@
 
                             <li>
                                 <i class="bi bi-envelope"></i>
-                                contact@dentist.com
+                                taradevelopmentsaccotd@gmail.com
                             </li>
 
                             <li>
                                 <i class="bi bi-telephone"></i>
-                                +970 598 536 488
+                                0779653643 / 0772495805
                             </li>
 
                             <li>
                                 <i class="bi bi-geo-alt"></i>
-                                Al-Remal — Khaled Bin Al-Waleed<br>
-                                Gaza, palestine
+                                Ober Entebbe, Ober Parish, Lira City West<br>
+                                about 600 meters from Jinja Camp Market along
+                                Ogwang Patrick Road
                             </li>
 
                         </ul>
@@ -315,15 +310,17 @@
                     class="d-flex justify-content-between align-items-center flex-wrap">
 
                     <div class="d-flex align-items-center gap-2 logo">
-                        <i class="fa-solid fa-tooth"></i>
-                        <strong> Prime Dental</strong>
+                        <img src="img/logo.jpg" class="logo-icon"
+                            alt="Lira City Tara SACCO logo">
+                        <strong> Lira City Tara SACCO</strong>
                     </div>
 
                     <small class="text-muted">
-                        Copyright © Prime Dental — Designed by BRIX Templates —
-                        Powered by Webflow
+                        Copyright © Lira City Tara Development SACCO. All
+                        rights reserved.
                         <br>
-                        <p class="text-center"> Developed by <a target="_blank" href="https://github.com/farahabuassi17">Farah Abuassi</a> • Distributed by <a target="_blank" href="https://themewagon.com">ThemeWagon</a></p>
+                        <p class="text-center">Built for member growth and
+                            prosperity.</p>
                     </small>
 
                     <div class="social-icons d-flex gap-2">
@@ -343,6 +340,8 @@
         <!-- Bootstrap JS && custom js-->
         <script
             src="js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
